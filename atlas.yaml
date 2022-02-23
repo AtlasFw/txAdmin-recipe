@@ -1,0 +1,29 @@
+$engine: 3
+$onesync: on
+name: Atlas Framework
+version: 0.1.0
+author: Atlas Development Team
+description: An innovative FiveM RPG framework to suit your needs!
+
+tasks:
+
+
+  # STANDALONE
+  - action: download_github
+    src: https://github.com/citizenfx/cfx-server-data
+    subpath: resources
+    dest: ./resources/[cfx-default]
+
+  - action: download_file
+    path: ./tmp/files/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/download/v2.0.1/oxmysql.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/files/oxmysql.zip
+
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+  # Clean up
+  - action: remove_path
+    path: ./tmp
