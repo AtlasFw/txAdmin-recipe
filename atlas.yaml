@@ -47,7 +47,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/files/atl-identity.zip
-    url: https://github.com/AtlasFw/atl-identity/releases/download/vAlpha/atl-identity.zip
+    url: https://github.com/AtlasFw/atl-identity/releases/download/vAlpha2/atl-identity.zip
   - action: unzip
     dest: ./resources/[atl]
     src: ./tmp/files/atl-identity.zip
