@@ -45,11 +45,6 @@ tasks:
     src: https://github.com/AtlasFw/atl-loading
     dest: ./resources/[atl]/atl-loading
 
-
-  - action: download_github
-    src: https://github.com/AtlasFw/atl-loading
-    dest: ./resources/[atl]/atl-loading
-
   - action: download_file
     path: ./tmp/files/atl-identity.zip
     url: https://github.com/AtlasFw/atl-identity/releases/download/vAlpha/atl-identity.zip
