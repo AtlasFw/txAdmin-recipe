@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: Atlas
-version: 0.1.0
+version: 0.1.1
 author: Atlas Development Team
 description: An innovative FiveM RPG framework to suit your needs!
 
@@ -17,8 +17,8 @@ tasks:
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/atlas/myLogo.jpg
-    dest: ./myLogo.jpg
+    src: ./tmp/atlas/myLogo.png
+    dest: ./myLogo.png
 
   # Connect database
   - action: connect_database
@@ -32,7 +32,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/files/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/download/v2.0.1/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/download/v2.1.1/oxmysql.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/files/oxmysql.zip
