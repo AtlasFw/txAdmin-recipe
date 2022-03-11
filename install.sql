@@ -11,9 +11,9 @@ CREATE TABLE `characters` (
   `license` VARCHAR(60) NOT NULL,
   `accounts` longtext,
   `appearance` longtext,
-  `char_data` longtext
+  `char_data` longtext,
   `identity` longtext,
   `inventory` longtext,
   `job_data` longtext,
-  `status` longtext,
+  `status` longtext
 ) DEFAULT CHARSET UTF8;
