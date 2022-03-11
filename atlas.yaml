@@ -45,12 +45,9 @@ tasks:
     src: https://github.com/AtlasFw/atl-loading
     dest: ./resources/[atl]/atl-loading
 
-  - action: download_file
-    path: ./tmp/files/atl-identity.zip
-    url: https://github.com/AtlasFw/atl-identity/releases/download/vAlpha2/atl-identity.zip
-  - action: unzip
-    dest: ./resources/[atl]
-    src: ./tmp/files/atl-identity.zip
+  - action: download_github
+    src: https://github.com/AtlasFw/atl-identity
+    dest: ./resources/[atl]/atl-identity
 
   - action: waste_time # prevent github throttling
     seconds: 10
