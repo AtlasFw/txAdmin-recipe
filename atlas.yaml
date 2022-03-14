@@ -1,7 +1,7 @@
 $engine: 3
 $onesync: on
 name: Atlas
-version: 0.1.1
+version: 0.1.2
 author: Atlas Development Team
 description: An innovative FiveM RPG framework to suit your needs!
 
@@ -45,12 +45,22 @@ tasks:
     src: https://github.com/AtlasFw/atl-loading
     dest: ./resources/[atl]/atl-loading
 
-  - action: download_github
-    src: https://github.com/AtlasFw/atl-identity
-    dest: ./resources/[atl]/atl-identity
+  - action: download_file
+    path: ./tmp/files/atl-identity.zip
+    url: https://github.com/AtlasFw/atl-identity/releases/download/vAlpha2/atl-identity.zip
+  - action: unzip
+    dest: ./resources/[atl]
+    src: ./tmp/files/atl-identity.zip
+    
+  - action: download_file
+    path: ./tmp/files/atl-appearance.zip
+    url: https://github.com/AtlasFw/atl-appearance/releases/download/vAlpha/atl-appearance.zip
+  - action: unzip
+    dest: ./resources/[atl]
+    src: ./tmp/files/atl-appearance.zip
 
   - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 5
 
   # Clean up
   - action: remove_path
