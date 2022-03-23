@@ -38,16 +38,16 @@ tasks:
     src: ./tmp/files/oxmysql.zip
 
   - action: download_github
-  src: https://github.com/AtlasFw/atl-loading
-  dest: ./resources/[atl]/atl-loading
+    src: https://github.com/AtlasFw/atl-loading
+    dest: ./resources/[atl]/atl-loading
 
   - action: download_github
     src: https://github.com/AtlasFw/atl-core
     dest: ./resources/[atl]/atl-core
 
   - action: download_github
-  src: https://github.com/AtlasFw/atl-status
-  dest: ./resources/[atl]/atl-status
+    src: https://github.com/AtlasFw/atl-status
+    dest: ./resources/[atl]/atl-status
 
   - action: download_file
     path: ./tmp/files/atl-identity.zip
