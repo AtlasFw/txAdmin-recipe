@@ -15,7 +15,7 @@ CREATE TABLE `characters` (
   `banned` tinyint(1) NOT NULL DEFAULT '0',
   `char_data` longtext,
   `identity` longtext,
-  `inventory` longtext NOT NULL DEFAULT '[]',
+  `inventory` longtext NOT NULL,
   `job_data` longtext,
   `last_played` date NOT NULL DEFAULT (CURRENT_DATE),
   `status` longtext,
