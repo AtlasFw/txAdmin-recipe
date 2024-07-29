@@ -2,10 +2,11 @@ CREATE TABLE `users` (
   `license` VARCHAR(60) NOT NULL,
   `name` VARCHAR(60) NOT NULL,
   `group` VARCHAR(60) NOT NULL,
-  `slots` INTEGER(2) NOT NULL,
-  `banned` BOOLEAN NOT NULL DEFAULT FALSE,
+  `slots` INT NOT NULL,
+  `banned` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`license`)
-) DEFAULT CHARSET UTF8;
+) DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `characters` (
   `char_id` int NOT NULL AUTO_INCREMENT,
   `license` VARCHAR(60) NOT NULL,
