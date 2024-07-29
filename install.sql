@@ -16,7 +16,7 @@ CREATE TABLE `characters` (
   `identity` longtext,
   `inventory` longtext NOT NULL DEFAULT '[]',
   `job_data` longtext,
-  `last_played` date NOT NULL DEFAULT CURDATE(),
+  `last_played` date NOT NULL DEFAULT CURRENT_DATE(),
   `status` longtext,
   PRIMARY KEY (`char_id`)
 ) DEFAULT CHARSET UTF8;
